@@ -75,7 +75,7 @@
 Выполняем:
 ```
 [root@nfsc ~]# systemctl daemon-reload
-
+[root@nfsc ~]# systemctl restart remote-fs.target
 ```
 >[!NOTE]
 >Перечитывать конфигурацию systemd нужно потому что systemd обрабатывает файл fstab, чтобы создать модули для монтирования устройств. Такие модули находятся во временной папке /run.
